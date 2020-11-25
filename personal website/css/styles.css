@@ -1,0 +1,371 @@
+/* Gneral styles */
+body {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: Hind, sans-serif;
+  font-weight: 500;
+  position: relative;
+  background-image: url("img/bg.jpg");
+  background-repeat: repeat;
+  background-size: cover 100vh;
+  display: block;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  color: white;
+}
+
+/* Aside */
+.aside {
+  /* background-image: url("img/aside.jpg"); */
+  width: 20vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: block;
+
+  /* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ); */
+}
+
+/* Main content */
+.main-content {
+  width: 75vw;
+  height: 500vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  /* background-color: rgb(201, 164, 164);  */
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding-top: 100px;
+}
+
+ul li {
+  list-style-type: none;
+  /* box-shadow: 0px 1px rgb(182, 159, 159); */
+  border-bottom: 1px solid rgb(180, 172, 211);
+  margin-top: 30px;
+  display: block;
+}
+.Main-container {
+  background-image: linear-gradient(black, red);
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0px;
+  left: 50px;
+  font-size: 13px;
+  color: #7d7d7d;
+}
+.home {
+  width: 75vw;
+  height: 100vh;
+  display: block;
+}
+.pp {
+  width: 25%;
+  border-radius: 20px;
+  border: 1px solid rgba(192, 105, 105, 0.301);
+  cursor: pointer;
+}
+
+.pp:hover {
+  background-color: rgb(202, 61, 61);
+  width: 30%;
+}
+
+.logo {
+  text-shadow: 2px 2px 5px #b06782;
+  width: 100px;
+  position: fixed;
+  left: 80px;
+  top: 50px;
+  font-variant: small-caps;
+  font-size: 30px;
+  /* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
+  /* background-color: #ededed; */
+  text-align: center;
+}
+
+.nav {
+  position: absolute;
+  top: 90px;
+  left: 10px;
+  /* background-color: red; */
+  height: 300px;
+  width: 200px;
+}
+
+.logo a::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  /* background-color: red; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 2px solid #cf808c;
+  border-left: 2px solid #cf808c;
+}
+
+.logo a::after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  /* background-color: red; */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: 2px solid #cf808c;
+  border-right: 2px solid #cf808c;
+}
+
+@media screen and (max-width: 700px) {
+  .logo {
+    transform: translateX(-30px);
+    transition: transform 0.5s ease-in;
+  }
+}
+@media screen and (min-width: 700px) {
+  .logo {
+    transition: transform 0.5s ease-out;
+  }
+}
+
+ul li a:not(.active):hover {
+  padding-left: 5px;
+}
+
+ul li a {
+  transition: all 0.3s ease;
+}
+ul li a:hover,
+ul li a.active {
+  padding-left: 5px;
+  color: rgb(180, 172, 211);
+  box-shadow: 0px 1px rgb(180, 172, 211);
+  display: flex;
+  transition: all 0.5s ease;
+}
+
+#About {
+  position: absolute;
+  top: 100vh;
+}
+#Experience {
+  position: absolute;
+  top: 200vh;
+}
+#Works {
+  position: absolute;
+  top: 300vh;
+}
+#Contact {
+  position: absolute;
+  top: 464vh;
+}
+
+@media screen and (max-width: 1100px) {
+  .aside {
+    transform: translateX(-45px);
+    transition: transform 0.5s ease-in;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .aside {
+    transition: transform 0.5s ease-out;
+  }
+}
+
+.heading {
+  font-size: xx-large;
+}
+.rolify-title {
+  height: 25px;
+  font-size: 50px;
+}
+.description1 {
+  font-size: 22px;
+}
+
+.lines {
+  width: 100px;
+  height: 10px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  border-top: 3px solid #cf808c;
+  border-left: 3px solid #cf808c;
+}
+
+progress {
+  border: none;
+  width: 400px;
+  height: 4px;
+  background: rgb(165, 68, 88);
+}
+
+progress {
+  color: lightblue;
+}
+
+progress::-webkit-progress-value {
+  background: lightblue;
+}
+
+progress::-moz-progress-bar {
+  background: lightcolor;
+}
+
+progress::-webkit-progress-value {
+  background: #524976;
+}
+
+progress::-webkit-progress-bar {
+  background: #fff1c5;
+}
+
+.exper {
+  background-color: rgb(176, 103, 130, 0.3);
+  height: 70vh;
+  width: 70vw;
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: 5px 5px 5px rgb(207, 128, 140, 0.2);
+  align-items: center;
+}
+
+.child1 {
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color: rgba(211, 172, 201, 0.5);
+  height: 95%;
+  width: 30%;
+  position: relative;
+  box-shadow: 5px 5px 5px rgb(240, 218, 225);
+}
+.child2 {
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color: rgba(211, 172, 201, 0.5);
+  height: 95%;
+  width: 30%;
+  position: relative;
+  box-shadow: 5px 5px 5px rgb(240, 218, 225);
+}
+.child3 {
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color: rgba(211, 172, 201, 0.5);
+  height: 95%;
+  width: 30%;
+  position: relative;
+  box-shadow: 5px 5px 5px rgb(240, 218, 225);
+}
+
+.exper-link {
+  padding-left: 5px;
+  text-decoration: underline;
+  position: absolute;
+  bottom: 9px;
+  left: 0px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.exper-link:hover {
+  padding-left: 10px;
+  color: #a38394ca;
+  box-shadow: 0px 1px rgb(180, 172, 211);
+  display: flex;
+  transition: all 0.5s ease;
+}
+
+.child1:hover,
+.child2:hover,
+.child3:hover {
+  padding-top: 20px;
+  padding-left: 20px;
+  transition: all 0.3s ease-in;
+  background-color: #524976;
+  box-shadow: 5px 5px 5px rgb(90, 96, 151);
+}
+.icons {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons-img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.icons-img:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.works-box {
+  position: relative;
+  top: -19px;
+  height: 100vh;
+  width: 75vw;
+}
+.worktitle {
+  float: left;
+}
+@media screen and (max-width: 1100px) {
+  .worktitle {
+    display: none;
+  }
+}
+iframe {
+  box-shadow: 5px 5px 5px rgb(90, 96, 151);
+  border-radius: 2%;
+}
+.work1 {
+  position: absolute;
+  top: -20px;
+  right: 5.65vw;
+}
+.work2 {
+  position: absolute;
+  top: 300px;
+  right: 5.65vw;
+}
+.work3 {
+  position: absolute;
+  top: 620px;
+  right: 5.65vw;
+}
+
+.contact-sub {
+  position: relative;
+  top: -35px;
+}
+
+.contact-details {
+  height:10vh;
+  width:30vw;
+  display: flex;
+  justify-content: space-around;
+  position:relative;
+  left:25vw;
+}
+
+h5 {
+  position: relative;
+  top: -60px;
+  left: 0px;
+}

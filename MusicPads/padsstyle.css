@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(66, 15, 30, 0.2);
+}
+
+header h2 {
+  margin: 10px 0px 10px 0px;
+  text-align: center;
+  font-size: 40px;
+  /* background-color: rgb(192, 216, 107); */
+}
+header p {
+  font-size: 20px;
+  /* background-color: bisque; */
+}
+
+.main {
+  margin: -90px 0px 10px 0px;
+  /* height:540px; */
+  width: 400px;
+  min-height: 55vh;
+  background-color: rgb(218, 225, 228, 0.5);
+  box-shadow: 5px 5px 5px gray;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 400px) {
+  .main {
+    width: 350px;
+    min-height: 60vh;
+  }
+}
+
+.main img {
+  height: 66px;
+  width: 80px;
+}
+.kick,
+.snare1,
+.importTrack,
+.record,
+.openHihat,
+.precussion1,
+.precussion2,
+.precussion3,
+.precussion4,
+.play,
+.closedHihat,
+.snare2 {
+  width: 80px;
+  height: 64px;
+  margin: 10px 5px -10px 5px;
+}
+.kick:hover,
+.kick.active {
+  background-color: rgb(228, 130, 130);
+}
+
+.snare1:hover ,
+.snare1.active{
+  background-color: rgb(77, 187, 238);
+}
+
+.importTrack:hover,
+.importTrack.active {
+  background-color: rgb(81, 202, 0);
+}
+
+.record:hover,
+.record.active {
+  background-color:rgb(244, 248, 128)  ;
+}
+
+.openHihat:hover,
+.openHihat.active {
+  background-color: rgb(231, 28, 238);
+}
+
+.precussion1:hover,
+.precussion1.active {
+  background-color: rgb(228, 130, 130);
+}
+
+.snare2:hover,
+.snare2.active {
+  background-color: rgb(228, 130, 130);
+}
+.play:hover,
+.play.active {
+  background-color: rgb(179, 152, 4);
+}
+
+.closedHihat:hover,
+.closedHihat.active {
+  background-color: rgb(139, 9, 172);
+}
+
+.snare2:hover,
+.snare2.active {
+  background-color: rgb(68, 0, 255);
+}
+
+.precussion2:hover,
+.precussion2.active {
+  background-color:rgb(175, 43, 43)  ;
+}
+
+.precussion4:hover ,
+.precussion4.active{
+  background-color: rgb(149, 189, 17);
+}
+.precussion3:hover,
+.precussion3.active {
+  background-color: rgb(182, 170, 0);
+}
+
+.track{
+  display:none;
+}

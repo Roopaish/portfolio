@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Rolify Music</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <!--css files-->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+</head>
+
+<body>
+    <audio preload="metadata" autoplay onplay="loading()">
+        <source src="music/intro.wav">
+    </audio>
+
+    <!--Main container -->
+    <div class="Main-container">
+        <!--aside-->
+        <div class="aside" id="side">
+
+            <!-- logo -->
+            <div class="logo">
+                <a href="#">Rolify</a>
+            </div>
+
+            <!-- nav -->
+            <ul class="nav" id="menu-center" onclick="myFunction(event)">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#Works">Works</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+
+            <!-- Copyright -->
+            <div class="copyright">
+                &copy;2020 rolifymusic
+            </div>
+        </div>
+        <!-- aside end -->
+
+        <!-- main-content -->
+        <div class="main-content">
+
+            <!-- Home section -->
+            <div id="home">
+                <section class="a">
+                    <div class="pic-nav">
+                        <img class="pp" id="mypic" src="css/img/01.jpg" alt="pp/navigator" onclick="my_Function()">
+                    </div>
+                    <p class="rolify-title">Rolify Music</p>
+                    <p class="description1">
+                        Software Engineer & Producer
+                    </p>
+
+                    <hr>
+                    <div class="icons">
+
+                        <a href="https://www.facebook.com/rolifymusic/" target="_blank"><img class="icons-img"
+                                src="./css/icons/Facebook.svg"></a>
+                        <a href="https://www.instagram.com/rolifymusic/" target="_blank"><img class="icons-img"
+                                src="./css/icons/Instagram.svg"> </a>
+                        <a href="https://www.youtube.com/channel/UCf7KKscwGZ1IhweB-kCMpoA?view_as=subscriber"
+                            target="_blank"><img class="icons-img" src="./css/icons/YouTube 2.svg"> </a>
+                        <!-- <a href=""
+                                target="_blank"><img class="icons-img" src="./css/icons/" </a> -->
+                    </div>
+            </div>
+            </section>
+            <!-- Home Section end -->
+
+            <!-- About -->
+            <div id="About">
+                <p class="heading">About</p>
+                <div class="lines"></div>
+                <p class="description">
+                    I'm Rupesh Budhathoki(rolify), a Software Engineer , a Technical Guide and A producer.
+
+                    I created this website for the purpose of highlighting my works in various fields, I'm involved. So
+                    that others would be motivated too. I also put some technical related issues with their solutions,
+                    various open-source codes and some online applications to perform specific task in your daily life
+                    when needed.
+                </p>
+                <p class="progressbar">
+                    <br><br><br>
+                    <label for="html">HTML5/CSS</label><br />
+                    <progress id="html" value="0.8" color="red"> 80% </progress><br />
+                    <label for="C">C</label><br />
+                    <progress id="C" value="0.85" color="red"> 85% </progress><br>
+                    <label for="Python">Python</label><br />
+                    <progress id="Python" value="0.2" color="red"> 20% </progress><br>
+                    <label for="Production">Production</label><br />
+                    <progress id="Production" value="0.3" color="red"> 30% </progress>
+                </p>
+            </div>
+            <!-- About End -->
+
+            <!-- Experience -->
+            <div id="Experience">
+                <p class="heading">Experience</p>
+                <div class="lines"></div>
+                <p class="description">
+                    So what experiences I have acieved so far!<br>
+                <div class="exper">
+                    <div class="child1">
+                        <p>
+                        <h1>HTML5</h1>
+                        </p>
+                        I had knowledge of HTML since 8th grade. So it has been almost five year.
+                        I have ppared the example-wise-tutorials for HTML5.
+                        <a href="https://github.com/Roopaish/HTML" target="_blank" class="exper-link">Click Here for
+                            HTML5 tutorials</a>
+                    </div>
+                    <div class="child2">
+                        <p>
+                        <h1>C/Python</h1>
+                        </p>
+                        I learned C and Python by myself. Though I also learned C from University. It has been a year
+                        since I started coding in C and Python.
+                        I have also ppared the example-wise-tutorials for python.
+                        <a href="https://github.com/Roopaish/Python-" target="_blank" class="exper-link">Click here fo
+                            Python tutorials</a>
+                    </div>
+                    <div class="child3">
+                        <p>
+                        <h1>Production</h1>
+                        </p>
+                        Its just something I do for fun.I mostly like lofi kind of tracks , so that's my expertise.
+                        <a href="https://www.youtube.com/channel/UCf7KKscwGZ1IhweB-kCMpoA?view_as=subscriber"
+                            target="_blank" class="exper-link">Click Here to check my works on music production<p></a>
+                    </div>
+                </div>
+
+                </p>
+            </div>
+            <!-- Experience End -->
+
+            <!-- Works -->
+            <div id="Works">
+                <p class="heading">Works</p>
+                <div class="lines"></div>
+                <p class="description">
+                <div class="works-box">
+                    <div class="work1">
+                        <p class="worktitle">I just made it with the flow. Enjoy!!</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7rGm6hH9O9M" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="work2">
+                        <p class="worktitle">I like lofi music. So I try to create one.</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/RYYjDmoC-oY" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="work3">
+                        <p class="worktitle">Feel the nature</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/4EI8d5lg2b4" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                </p>
+            </div>
+            <!-- Works end -->
+
+            <!-- Contact -->
+            <div id="Contact">
+                <p class="heading">Contact</p>
+                <div class="lines"></div>
+                <p class="contact-sub">
+                    Wanna get in touch!
+                </p>
+                <div class="contact-details">
+                    <h5>Location</h5>
+                    <a style="font-size:14px; position:relative; left:-55px;top:-17px;"
+                        href="https://www.google.com/maps/place/Balkumari,+Lalitpur+44600/@27.6709483,85.3366149,16z/data=!3m1!4b1!4m5!3m4!1s0x39eb19e58a6d1331:0x18ad0afdf12f826f!8m2!3d27.6695288!4d85.3407568"
+                        target="_blank">Balkumari, Lalitpur</a>
+                    <h5>Phone</h5>
+                    <p style="font-size:14px;position:relative; left:-40px; top:-30px;">Not Available</p>
+                    <h5>Email</h5>
+                    <a style="font-size:14px; position:relative; left:-35px; top:-17px;"
+                        href="mailto:rupesh39943@gmail.com" target="_blank">rupesh39943@gmail.com</a>
+                    <h5>Web</h5>
+                    <a style="font-size:14px; position:relative; left:-30px;top:-17px;" href="#">rolifymusic</a>
+                </div>
+            </div>
+            <!-- Contact End -->
+
+        </div>
+        <!-- main-content end -->
+
+        <!-- Messenger -->
+        <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <script>
+            window.fbAsyncInit = function () {
+                FB.init({
+                    xfbml: true,
+                    version: 'v8.0'
+                });
+            };
+
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
+        <!-- Your Chat Plugin code -->
+        <div class="fb-customerchat" attribution=setup_tool page_id="108315231022803" theme_color="#ff5ca1"
+            logged_in_greeting="Are you lost little girl??" logged_out_greeting="Are you lost little girl??">
+        </div>
+        <!-- Messenger End -->
+    </div>
+    <!--main container end-->
+   
+    <script src="./js/basics.js" type="text/javascript"></script>
+</body>

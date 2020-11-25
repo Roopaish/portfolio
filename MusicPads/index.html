@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Pads</title>
+    <link rel="stylesheet" href="padsstyle.css">
+</head>
+
+<body>
+    <!-- app -->
+    <div class="app">
+        <!-- app-header -->
+        <header>
+            <h2>Music Pads</h2>
+            <p>Tap/touch the pads to play/import/record
+                Or press the letters on keyboard</p>
+                <p>Note:Turn off caps lock if needed</p>
+        </header>
+        <!-- app header end -->
+
+        <!-- app main section -->
+        <div class="main">
+            <div class="kick">
+                <img src="svg/kick.svg">
+                <audio class="sound" preload="auto">
+                    <source src="./sounds/kick.wav" />
+                </audio>
+            </div>
+            <div class="snare1">
+                <img src="svg/snare1.svg">
+                <audio class="sound" preload="auto">
+                    <source src="./sounds/Snare1.wav" />
+                </audio>
+            </div>
+            <div class="precussion1">
+                <img src="svg/precussion1.svg">
+                <audio class="sound" preload="auto">
+                    <source src="./sounds/Percussion1.wav" />
+                </audio>
+            </div>
+            <div class="precussion2">
+                <img src="svg/precussion2.svg">
+                <audio class="sound" preload="auto">
+                    <source src="./sounds/Percussion2.wav" />
+                </audio>
+            </div>
+            <div class="openHihat">
+                <img src="svg/openHihat.svg">
+                <audio class="sound" preload="auto">
+                    <source src="./sounds/openHihat.wav" />
+                </audio>
+            </div>
+                        
+            <div class="precussion3">
+                <img src="svg/precussion3.svg">
+                <audio class="sound" preload="auto">
+                    <source src="./sounds/Percussion3.wav" />
+                </audio>
+            </div>
+            <div class="precussion4">
+                <img src="svg/precussion4.svg">
+                <audio class="sound" preload="auto">
+                    <source src="./sounds/Percussion4.wav" />
+                </audio>
+            </div>
+            <div class="snare2">
+                <img src="svg/snare2.svg">
+                <audio class="sound" preload="auto">
+                    <source src="./sounds/Snare2.wav" />
+                </audio>
+            </div>
+            <div class="closedHihat">
+                <img src="svg/closedHihat.svg">
+                <audio class="sound" preload="auto">
+                    <source src="./sounds/closedHihat.wav" />
+                </audio>
+            </div>
+            <div class="importTrack">
+                <img src="svg/ImportTrack.svg">
+                <input type="file" class="track" accept=".mp3, .wav, .mp4,.m4a" />
+            </div>
+            <div class="record">
+                <img src="svg/record.svg">
+
+            </div>
+
+
+            <div class="play">
+                <img src="svg/play.svg">
+
+            </div>
+
+        </div>
+        <!-- app main section end -->
+    </div>
+    <!-- app end -->
+    <script src="app.js"></script>
+</body>
+
+</html>
