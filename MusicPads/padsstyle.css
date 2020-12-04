@@ -1,10 +1,15 @@
 * {
+  
+ 
+  color:rgba(255, 255, 255, 0.808);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
+  border:1px solid red;
+  background-color: rgb(59, 77, 156);
   font-family: "Raleway", sans-serif;
 }
 
@@ -14,44 +19,51 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(66, 15, 30, 0.2);
+  background-color: rgba(0, 0, 0, 0.322);
 }
 
 header h2 {
+  background-color: rgba(0, 0, 0, 0.315);
+  border-radius: 50px;
   margin: 10px 0px 10px 0px;
   text-align: center;
   font-size: 40px;
-  /* background-color: rgb(192, 216, 107); */
+ 
 }
 header p {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.315); 
+  border-radius: 30px;
   font-size: 20px;
-  /* background-color: bisque; */
 }
 
 .main {
+  border-radius: 10px;
   margin: -90px 0px 10px 0px;
-  /* height:540px; */
   width: 400px;
   min-height: 55vh;
-  background-color: rgb(218, 225, 228, 0.5);
+  background-color: rgba(0, 0, 0, 0.322);
   box-shadow: 5px 5px 5px gray;
-  border-radius: 3px;
+  border-radius: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
 @media screen and (max-width: 400px) {
   .main {
-    width: 350px;
+    width: 100vw;
     min-height: 60vh;
   }
 }
 
 .main img {
+  border-radius: 10px;
   height: 66px;
-  width: 80px;
+  width: 75px;
 }
+
+
 .kick,
 .snare1,
 .importTrack,
@@ -68,67 +80,83 @@ header p {
   height: 64px;
   margin: 10px 5px -10px 5px;
 }
+
 .kick:hover,
 .kick.active {
-  background-color: rgb(228, 130, 130);
+  border-radius:5px;
+  background-color: rgb(255, 5, 5);
 }
 
 .snare1:hover ,
 .snare1.active{
-  background-color: rgb(77, 187, 238);
+  border-radius:5px;
+  background-color: rgb(0, 174, 255);
 }
 
 .importTrack:hover,
 .importTrack.active {
-  background-color: rgb(81, 202, 0);
+  border-radius:5px;
+  background-color: rgb(103, 255, 2);
 }
 
 .record:hover,
 .record.active {
-  background-color:rgb(244, 248, 128)  ;
+  border-radius:5px;
+  background-color:rgb(246, 255, 0)  ;
 }
 
 .openHihat:hover,
 .openHihat.active {
-  background-color: rgb(231, 28, 238);
+  border-radius:5px;
+  background-color: rgb(247, 1, 255);
 }
 
 .precussion1:hover,
 .precussion1.active {
-  background-color: rgb(228, 130, 130);
+  border-radius:5px;
+  background-color: rgb(253, 5, 5);
 }
 
-.snare2:hover,
-.snare2.active {
-  background-color: rgb(228, 130, 130);
-}
+
 .play:hover,
 .play.active {
-  background-color: rgb(179, 152, 4);
+  border-radius:5px;
+  background-color: rgb(255, 217, 1);
 }
 
 .closedHihat:hover,
 .closedHihat.active {
-  background-color: rgb(139, 9, 172);
+  border-radius:5px;
+  background-color: rgb(204, 0, 255);
 }
 
 .snare2:hover,
 .snare2.active {
-  background-color: rgb(68, 0, 255);
+  border-radius:5px;
+  background-color: rgb(145, 106, 255);
 }
 
 .precussion2:hover,
 .precussion2.active {
-  background-color:rgb(175, 43, 43)  ;
+  border-radius:5px;
+  background-color:rgb(255, 4, 4)  ;
 }
 
 .precussion4:hover ,
 .precussion4.active{
-  background-color: rgb(149, 189, 17);
+  border-radius:5px;
+  background-color: rgb(196, 255, 4);
 }
 .precussion3:hover,
 .precussion3.active {
-  background-color: rgb(182, 170, 0);
+  border-radius:5px;
+  background-color: rgb(255, 238, 4);
+}
+
+.track:hover,
+.track:active{
+  border-radius:5px;
+  background-color: rgb(0, 255, 98);
 }
 
 .track{
